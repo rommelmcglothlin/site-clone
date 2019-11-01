@@ -1,0 +1,184 @@
+body {
+  min-height: 100vh;
+}
+
+/* nav bar */
+.hb,
+.hb:before,
+.hb:after {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  border-radius: 3px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.hb:before,
+.hb:after {
+  content: "";
+  position: absolute;
+  top: -7.5px;
+  left: 0;
+}
+
+.hb:after {
+  top: 7.5px;
+}
+
+.hb:hover {
+  background-color: transparent;
+}
+
+.hb:hover:before,
+.hb:hover:after {
+  top: 0;
+}
+
+.hb:hover::before {
+  transform: rotate(45deg);
+}
+
+.hb:hover::after {
+  transform: rotate(-45deg);
+}
+
+/* header links */
+span {
+  padding: 0 1rem;
+  transition: opacity 0.2s;
+}
+
+.sibling-fade:hover span:not(:hover) {
+  opacity: 0.5;
+}
+.btn-buttontop {
+  background-color: #8a2387;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+}
+.btn-buttontop:before,
+.btn-buttontop:after {
+  border: 0 solid transparent;
+  transition: all 0.25s;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.btn-buttontop:before {
+  border-top: 2px solid #8a2387;
+  left: 0px;
+  top: -5px;
+}
+.btn-buttontop:after {
+  border-bottom: 2px solid #8a2387;
+  bottom: -5px;
+  right: 0px;
+}
+.btn-buttontop:hover {
+  background-color: #8a2387;
+}
+.btn-buttontop:hover:before,
+.btn-buttontop:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+/* buttons for cards */
+.btn-button {
+  background-color: #dd2476;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+}
+.btn-button:before,
+.btn-button:after {
+  border: 0 solid transparent;
+  transition: all 0.25s;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.btn-button:before {
+  border-top: 2px solid #ff512f;
+  left: 0px;
+  top: -5px;
+}
+.btn-button:after {
+  border-bottom: 2px solid #ff512f;
+  bottom: -5px;
+  right: 0px;
+}
+.btn-button:hover {
+  background-color: #dd2476;
+}
+.btn-button:hover:before,
+.btn-button:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+/* header background */
+.bg-header {
+  background: rgb(255, 254, 255);
+  background: linear-gradient(
+    24deg,
+    rgba(255, 254, 255, 1) 10%,
+    rgba(255, 254, 255, 1) 46%,
+    rgba(95, 1, 133, 1) 46%,
+    rgba(101, 0, 140, 1) 95%,
+    rgba(51, 0, 71, 1) 100%
+  );
+}
+
+.bg-main {
+  background: rgb(255, 193, 7);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 193, 7, 1) 0%,
+    rgba(255, 193, 7, 1) 46%,
+    rgba(255, 193, 7, 1) 81%,
+    rgba(251, 241, 255, 1) 81%,
+    rgba(255, 255, 241, 1) 100%
+  );
+}
+
+.bg-footer {
+  background: rgb(46, 46, 46);
+  background: linear-gradient(
+    299deg,
+    rgba(46, 46, 46, 1) 10%,
+    rgba(47, 47, 47, 1) 19%,
+    rgba(33, 33, 33, 1) 46%,
+    rgba(19, 19, 19, 1) 55%,
+    rgba(24, 24, 24, 1) 100%
+  );
+}
+
+.bg-subfoot {
+  background: rgb(167, 0, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(167, 0, 235, 1) 10%,
+    rgba(95, 1, 133, 1) 46%,
+    rgba(95, 1, 133, 1) 55%,
+    rgba(101, 0, 140, 1) 68%,
+    rgba(51, 0, 71, 1) 100%
+  );
+}
+
+/* card background */
+.bg-cardgradient {
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
