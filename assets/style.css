@@ -2,6 +2,22 @@ body {
   min-height: 100vh;
 }
 
+.border-3 {
+  border-width: 10px;
+}
+
+.bg-navigation {
+  background: rgb(255, 254, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 254, 255, 1) 0%,
+    rgba(255, 254, 255, 1) 0%,
+    rgba(95, 1, 133, 1) 0%,
+    rgba(101, 0, 140, 1) 80%,
+    rgba(51, 0, 71, 1) 96%
+  );
+}
+
 /* nav bar */
 .hb,
 .hb:before,
@@ -133,11 +149,11 @@ span {
   background: rgb(255, 254, 255);
   background: linear-gradient(
     24deg,
-    rgba(255, 254, 255, 1) 10%,
-    rgba(255, 254, 255, 1) 46%,
-    rgba(95, 1, 133, 1) 46%,
-    rgba(101, 0, 140, 1) 95%,
-    rgba(51, 0, 71, 1) 100%
+    #fffeff 10%,
+    #fffeff 46%,
+    #5f0185 46%,
+    #65008c 95%,
+    #330047 100%
   );
 }
 
@@ -181,4 +197,20 @@ span {
 .bg-cardgradient {
   background-color: #a4508b;
   background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+
+.border-spacer {
+  border-top: 5px solid #5f0a87;
+}
+
+.border-3 {
+  border-bottom: 3px solid #dd2476;
+}
+
+.btn-location {
+  position: absolute;
+  bottom: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
 }
